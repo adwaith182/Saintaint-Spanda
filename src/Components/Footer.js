@@ -10,12 +10,10 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Health <span className="ft-sign">+</span>
+              Spanda 
             </p>
             <p className="ft-description">
-              Talk to online doctors and get medical advice, online
-              prescriptions, refills and medical notes within minutes. On-demand
-              healthcare services at your fingertips.
+              On-demand healthcare services at your fingertips.
             </p>
           </div>
 
@@ -32,13 +30,7 @@ function Footer() {
               <a href="#services">Heart Disease</a>
             </li>
             <li>
-              <a href="#services">Dental Care</a>
-            </li>
-            <li>
               <a href="#services">Prescription</a>
-            </li>
-            <li>
-              <a href="#services">Insights for doctors</a>
             </li>
           </ul>
         </div>
@@ -68,12 +60,7 @@ function Footer() {
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
-            </li>
-            <li>
-              <a href="mailto:appointment@healthplus.com">
-                appointment@healthplus.com
-              </a>
+              <a href="mailto:support@healthplus.com">support@saintaint.com</a>
             </li>
             <li>
               <a href="tel:+022 5454 5252">+022 5454 5252</a>
@@ -86,12 +73,12 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2013-2023 saintaint. All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>
             <a
-              href="https://linkedin.com/in/Alkaison/"
+              href="/"
               title="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -125,7 +112,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://x.com/Alkaison/"
+              href="/"
               title="Twitter"
               target="_blank"
               rel="noopener noreferrer"

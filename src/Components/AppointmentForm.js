@@ -73,18 +73,18 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Health <span className="legal-siteSign">+</span>
+          Spanda 
         </Link>
       </h1>
 
       <div className="form-container">
         <h2 className="form-title">
-          <span>Book Appointment Online</span>
+          <span>Buy Product Online</span>
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
           <label>
-            Patient Full Name:
+            Full Name:
             <input
               type="text"
               value={patientName}
@@ -96,7 +96,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Phone Number:
+            Phone Number:
             <input
               type="text"
               value={patientNumber}
@@ -108,7 +108,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Gender:
+            Gender:
             <select
               value={patientGender}
               onChange={(e) => setPatientGender(e.target.value)}
@@ -124,7 +124,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Preferred Appointment Time:
+            Preferred pickup Time:
             <input
               type="datetime-local"
               value={appointmentTime}
@@ -136,30 +136,30 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Preferred Mode:
+            Preferred Model:
             <select
               value={preferredMode}
               onChange={(e) => setPreferredMode(e.target.value)}
               required
             >
               <option value="default">Select</option>
-              <option value="voice">Voice Call</option>
-              <option value="video">Video Call</option>
+              <option value="advance">advance</option>
+              <option value="normal">normal</option>
             </select>
             {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
           </label>
 
           <br />
           <button type="submit" className="text-appointment-btn">
-            Confirm Appointment
+            Confirm Booking
           </button>
 
-          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Appointment details has been sent to the patients phone number via SMS.</p>
+          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Product details has been sent to the phone number via SMS.</p>
         </form>
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2013-2023 Spanda. All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />

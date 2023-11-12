@@ -1,10 +1,19 @@
 .navbar-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: white;
+    background-color:#13224b;
+    z-index: 1000;
+}
+
+/* Add this style to push content down when navbar is fixed */
+body {
+    margin-top: 80px;
 }
 .navbar-title a {
     color: #1A8EFD;
@@ -13,12 +22,6 @@
 }
 .navbar-title {
     font-family: 'Poppins', sans-serif;
-}
-.navbar-sign {
-    color: #54de54;
-    font-family: Cambria, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
 }
 .navbar-items {
     list-style-type: none;
@@ -33,12 +36,12 @@
 }
 .navbar-links {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: .8px;
 }
 .navbar-links:hover {
-    color: #0cc2ea;
+    color: #b4b6c3;
 }
 .navbar-btn {
     padding: 14px 20px;

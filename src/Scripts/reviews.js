@@ -12,7 +12,7 @@ export const customerReviews = [
     {
       "name": "Alice Smith",
       "location": "New York, USA",
-      "message": "Booking appointments was a breeze, and the service exceeded my expectations. The doctors truly listen and provide effective solutions. 5 stars!"
+      "message": "Buying products from saintaint was a breeze, and the service exceeded my expectations.5 stars!"
     },
     {
       "name": "Bob Johnson",

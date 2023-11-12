@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Doctor from "../Assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
@@ -36,21 +36,19 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
-          <h2 className="text-title">
-            Find your Doctor and make an Appointments
-          </h2>
+          <p className="text-headline">Health comes first</p>
+          <h2 className="text-title">Redefining the ausculation experience.</h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+            Unlock the power of life-saving technology with our revolutionary
+            medical product. Join the mission to make a difference—because every
+            purchase brings us one step closer to saving lives.
           </p>
           <button
             className="text-appointment-btn"
             type="button"
             onClick={handleBookAppointmentClick}
           >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+            <FontAwesomeIcon icon={faCalendarCheck} /> Buy our product
           </button>
           <div className="text-stats">
             <div className="text-stats-container">

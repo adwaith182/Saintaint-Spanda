@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import image from "../Assets/image-removebg-preview.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCommentDots,
@@ -31,16 +32,21 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+        <img
+        src={image}
+        alt=""
+        className="navbar-logo"
+        style={{ width: '185px'}}
+      />
         </Link>
       </h1>
 
       {/* Desktop */}
       <ul className="navbar-items">
         <li>
-          <Link to="/" className="navbar-links">
+        <a href="#Hero" className="navbar-links">
             Home
-          </Link>
+            </a>
         </li>
         <li>
           <a href="#services" className="navbar-links">
@@ -87,7 +93,7 @@ function Navbar() {
           </li>
           <li>
             <a onClick={openNav} href="#services">
-              Services
+              Features
             </a>
           </li>
           <li>
@@ -126,3 +132,119 @@ function Navbar() {
 }
 
 export default Navbar;
+// import React, { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faCommentDots,
+//   faBars,
+//   faXmark,
+// } from "@fortawesome/free-solid-svg-icons";
+// import "../Styles/Navbar.css";
+// import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { Link } from "react-router-dom";
+// import { toast } from "react-toastify";
+
+// function Navbar() {
+//   const [nav, setNav] = useState(false);
+//   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+//   const openNav = () => {
+//     setNav(!nav);
+//   };
+
+//   const handleChatBtnClick = () => {
+//     if (!isButtonDisabled) {
+//       toast.info("Experiencing high traffic, Please wait a moment.", {
+//         position: toast.POSITION.TOP_CENTER,
+//         onOpen: () => setIsButtonDisabled(true),
+//         onClose: () => setIsButtonDisabled(false),
+//       });
+//     }
+//   };
+
+//   return (
+//     <div className="navbar-section">
+//       <h1 className="navbar-title">
+//         <Link to="/">
+//            <span className="navbar-sign">+</span>
+//         </Link>
+//       </h1>
+
+//       {/* Desktop */}
+//       <ul className="navbar-items">
+//         <li>
+//           <ScrollLink
+//             to="home-section"
+//             smooth={true}
+//             duration={1000}
+//             className="navbar-links"
+//           >
+//             Home
+//           </ScrollLink>
+//         </li>
+//         <li>
+//           <ScrollLink
+//             to="services-section"
+//             smooth={true}
+//             duration={1000}
+//             className="navbar-links"
+//           >
+//             Services
+//           </ScrollLink>
+//         </li>
+//         {/* Add similar ScrollLinks for other sections */}
+//       </ul>
+
+//       <button
+//         className="navbar-btn"
+//         type="button"
+//         disabled={isButtonDisabled}
+//         onClick={handleChatBtnClick}
+//       >
+//         <FontAwesomeIcon icon={faCommentDots} /> Live Chat
+//       </button>
+
+//       {/* Mobile */}
+//       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
+//         <div onClick={openNav} className="mobile-navbar-close">
+//           <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
+//         </div>
+
+//         <ul className="mobile-navbar-links">
+//           <li>
+//             <ScrollLink
+//               to="home-section"
+//               smooth={true}
+//               duration={1000}
+//               onClick={openNav}
+//             >
+//               Home
+//             </ScrollLink>
+//           </li>
+//           <li>
+//             <ScrollLink
+//               to="services-section"
+//               smooth={true}
+//               duration={1000}
+//               onClick={openNav}
+//             >
+//               Services
+//             </ScrollLink>
+//           </li>
+//           {/* Add similar ScrollLinks for other sections */}
+//         </ul>
+//       </div>
+
+//       {/* Hamburger Icon */}
+//       <div className="mobile-nav">
+//         <FontAwesomeIcon
+//           icon={faBars}
+//           onClick={openNav}
+//           className="hamb-icon"
+//         />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Navbar;
